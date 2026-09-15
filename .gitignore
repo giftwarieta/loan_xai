@@ -1,0 +1,8 @@
+data/*.csv
+outputs/models/*.joblib
+outputs/reports/*.html
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+kaggle.json
+.DS_Store

@@ -1,0 +1,152 @@
+{
+  "cleaning_log": {
+    "columns_dropped_high_missingness_or_leakage": 54,
+    "duplicates_removed": 0,
+    "imputation_values": {
+      "emp_length": 6.0,
+      "annual_inc": 65000.0,
+      "dti": 17.61,
+      "delinq_2yrs": 0.0,
+      "inq_last_6mths": 0.0,
+      "mths_since_last_delinq": 31.0,
+      "mths_since_last_record": 71.0,
+      "open_acc": 11.0,
+      "pub_rec": 0.0,
+      "revol_util": 52.2,
+      "total_acc": 23.0,
+      "collections_12_mths_ex_med": 0.0,
+      "mths_since_last_major_derog": 44.0,
+      "annual_inc_joint": 106291.0,
+      "dti_joint": 18.46,
+      "acc_now_delinq": 0.0,
+      "tot_coll_amt": 0.0,
+      "tot_cur_bal": 80231.0,
+      "open_acc_6m": 1.0,
+      "open_act_il": 2.0,
+      "open_il_12m": 1.0,
+      "open_il_24m": 1.0,
+      "mths_since_rcnt_il": 12.0,
+      "total_bal_il": 24061.5,
+      "il_util": 75.0,
+      "open_rv_12m": 1.0,
+      "open_rv_24m": 2.0,
+      "max_bal_bc": 4201.0,
+      "all_util": 59.0,
+      "total_rev_hi_lim": 24100.0,
+      "inq_fi": 1.0,
+      "total_cu_tl": 0.0,
+      "inq_last_12m": 2.0,
+      "acc_open_past_24mths": 4.0,
+      "avg_cur_bal": 7407.0,
+      "bc_open_to_buy": 4700.0,
+      "bc_util": 63.2,
+      "chargeoff_within_12_mths": 0.0,
+      "delinq_amnt": 0.0,
+      "mo_sin_old_il_acct": 129.0,
+      "mo_sin_old_rev_tl_op": 164.0,
+      "mo_sin_rcnt_rev_tl_op": 8.0,
+      "mo_sin_rcnt_tl": 5.0,
+      "mort_acc": 1.0,
+      "mths_since_recent_bc": 13.0,
+      "mths_since_recent_bc_dlq": 38.0,
+      "mths_since_recent_inq": 5.0,
+      "mths_since_recent_revol_delinq": 33.0,
+      "num_accts_ever_120_pd": 0.0,
+      "num_actv_bc_tl": 3.0,
+      "num_actv_rev_tl": 5.0,
+      "num_bc_sats": 4.0,
+      "num_bc_tl": 7.0,
+      "num_il_tl": 7.0,
+      "num_op_rev_tl": 7.0,
+      "num_rev_accts": 13.0,
+      "num_rev_tl_bal_gt_0": 5.0,
+      "num_sats": 11.0,
+      "num_tl_120dpd_2m": 0.0,
+      "num_tl_30dpd": 0.0,
+      "num_tl_90g_dpd_24m": 0.0,
+      "num_tl_op_past_12m": 2.0,
+      "pct_tl_nvr_dlq": 98.0,
+      "percent_bc_gt_75": 42.9,
+      "pub_rec_bankruptcies": 0.0,
+      "tax_liens": 0.0,
+      "tot_hi_cred_lim": 112373.0,
+      "total_bal_ex_mort": 37295.0,
+      "total_bc_limit": 15100.0,
+      "total_il_high_credit_limit": 31681.0,
+      "revol_bal_joint": 24655.0,
+      "longest_credit_length": 14.75
+    },
+    "outlier_bounds": {
+      "loan_amnt": {
+        "lower": 1500.0,
+        "upper": 35000.0
+      },
+      "annual_inc": {
+        "lower": 18000.0,
+        "upper": 251000.0
+      },
+      "dti": {
+        "lower": 1.77,
+        "upper": 38.46
+      },
+      "revol_util": {
+        "lower": 1.1,
+        "upper": 98.2
+      }
+    },
+    "remaining_missing": 1322528
+  },
+  "model_metrics": {
+    "Logistic Regression": {
+      "accuracy": 0.6582,
+      "precision": 0.3218,
+      "recall": 0.6415,
+      "f1": 0.4286,
+      "roc_auc": 0.7091
+    },
+    "Random Forest": {
+      "accuracy": 0.6512,
+      "precision": 0.3193,
+      "recall": 0.6584,
+      "f1": 0.43,
+      "roc_auc": 0.7133
+    },
+    "XGBoost": {
+      "accuracy": 0.656,
+      "precision": 0.3255,
+      "recall": 0.6732,
+      "f1": 0.4388,
+      "roc_auc": 0.7248
+    }
+  },
+  "best_model": "XGBoost",
+  "shap_top_10": {
+    "grade_ordinal": 0.3587000072002411,
+    "term_months": 0.17759999632835388,
+    "int_rate": 0.13910000026226044,
+    "fico_avg": 0.13079999387264252,
+    "dti": 0.12129999697208405,
+    "loan_to_income": 0.09950000047683716,
+    "open_acc": 0.09929999709129333,
+    "revol_bal": 0.07639999687671661,
+    "mort_acc": 0.06960000097751617,
+    "addr_state_freq": 0.06960000097751617
+  },
+  "fpr_evaluation": {
+    "stage": "stage_b",
+    "fpr_summary": {
+      "n_evaluated": 100,
+      "success_rate": 0.5,
+      "avg_features_changed": 1.84,
+      "avg_cost": 4.53,
+      "avg_proba_reduction": 0.1046
+    },
+    "baseline_summary": {
+      "n_evaluated": 100,
+      "success_rate": 0.5,
+      "avg_features_changed": 2.42,
+      "avg_cost": 5.06,
+      "avg_proba_reduction": 0.1034
+    }
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "cleaning_log": {
+    "duplicates_removed": 159734,
+    "imputation_values": {
+      "emp_length": 1.0,
+      "risk_score": 637.0
+    }
+  },
+  "model_metrics": {
+    "Logistic Regression": {
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "roc_auc": 1.0
+    },
+    "Random Forest": {
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "roc_auc": 1.0
+    },
+    "XGBoost": {
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "roc_auc": 1.0
+    }
+  },
+  "best_model": "Logistic Regression",
+  "shap_top_10": {
+    "state_nan": 1.2661,
+    "state_CA": 0.2778,
+    "emp_length": 0.2407,
+    "state_TX": 0.2316,
+    "state_NY": 0.2028,
+    "zip3_freq": 0.1907,
+    "state_FL": 0.1383,
+    "state_GA": 0.1017,
+    "state_NC": 0.0838,
+    "state_IL": 0.0647
+  },
+  "fpr_evaluation": {
+    "stage": "stage_a",
+    "fpr_summary": {
+      "n_evaluated": 100,
+      "success_rate": 0.0,
+      "avg_features_changed": null,
+      "avg_cost": null,
+      "avg_proba_reduction": null
+    },
+    "baseline_summary": {
+      "n_evaluated": 100,
+      "success_rate": 0.0,
+      "avg_features_changed": null,
+      "avg_cost": null,
+      "avg_proba_reduction": null
+    }
+  }
+}
